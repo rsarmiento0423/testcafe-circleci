@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome,firefox,safari ./tests/firstTest.ts"
+    "test:chrome": "testcafe chrome,firefox ./tests/firstTest.ts"
   },
   "author": "Ray Sarmiento",
   "license": "ISC",
