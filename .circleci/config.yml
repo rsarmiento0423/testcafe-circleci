@@ -1,13 +1,16 @@
 version: 2.1
+orbs:
+  node: circleci/node@4.1.0
+  browser-tools: circleci/browser-tools@1.1.0
 jobs:
-  build:
+  test:
     working_directory: ~/circleci-testcafe
     docker:
-      - image: circleci/python:3.8.3
-      - image: testcafe/testcafe:1.18.1
+      - image: cimg/node:lts-browsers
     steps:
       - checkout
-      - setup_remote_docker
+      - browser-tools/install-browser-tools
+      - node/install-packages
       - run:
           name: show current directory
           command: pwd
@@ -15,9 +18,11 @@ jobs:
           name: show directory contents
           command: ls -lrt
       - run:
-          name: execute testcafe using chromium
-          command: docker run -v ${PWD}/tests:/tests -it testcafe/testcafe chromium /tests    
+          name: execute testcafe using chrome
+          command: testcafe chrome ./tests/firstTest.ts
+      - store_test_results:
+          path: /tmp/test-results   
 workflows:
-  build:
+  e2e-test:
     jobs:
-     - build
+     - test
