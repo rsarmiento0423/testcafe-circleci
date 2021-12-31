@@ -3,6 +3,7 @@ jobs:
   build:
     working_directory: ~/circleci-testcafe
     docker:
+      - image: circleci/python:3.8.3
       - image: testcafe/testcafe
     steps:
       - checkout
