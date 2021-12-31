@@ -10,7 +10,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: execute testcafe using chromium
-          command: docker --version    
+          command: docker run -v ${PWD}/tests:/tests -it testcafe/testcafe chromium /tests    
 workflows:
   build:
     jobs:
