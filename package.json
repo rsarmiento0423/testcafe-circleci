@@ -1,0 +1,15 @@
+{
+  "name": "ray_testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome,firefox,safari ./tests/firstTest.ts"
+  },
+  "author": "Ray Sarmiento",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.5.1",
+    "testcafe": "^1.18.1"
+  }
+}
