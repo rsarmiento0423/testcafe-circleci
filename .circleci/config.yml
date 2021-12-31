@@ -9,6 +9,12 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
+          name: show current directory
+          command: pwd
+      - run:
+          name: show directory contents
+          command: ls -lrt
+      - run:
           name: execute testcafe using chromium
           command: docker run -v ${PWD}/tests:/tests -it testcafe/testcafe chromium /tests    
 workflows:
