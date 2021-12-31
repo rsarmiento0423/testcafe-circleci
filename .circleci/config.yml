@@ -19,7 +19,7 @@ jobs:
           command: ls -lrt
       - run:
           name: execute testcafe using chrome
-          command: testcafe chrome ./tests/firstTest.ts
+          command: npm run test:chrome
       - store_test_results:
           path: /tmp/test-results   
 workflows:
