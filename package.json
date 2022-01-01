@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:headless": "testcafe chrome:headless,firefox:headless ./tests/firstTest.ts -s takeOnfails=true --reporter html:test-results/report.html"
+    "test:headless": "testcafe chrome:headless,firefox:headless ./tests/firstTest.ts -s takeOnfails=true --reporter html:/tmp/test-results/report.html"
   },
   "author": "Raymond Sarmiento",
   "license": "ISC",
