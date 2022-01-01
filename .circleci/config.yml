@@ -26,7 +26,7 @@ jobs:
       - run:
           name: list directory contents
           command: ls -lrt
-      - store_test_results:
+      - store_artifacts:
           path: test-results   
 workflows:
   e2e-test:
