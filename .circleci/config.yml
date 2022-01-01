@@ -20,6 +20,12 @@ jobs:
       - run:
           name: execute testcafe using chrome
           command: npm run test:headless
+      - run:
+          name: show directory
+          command: pwd
+      - run:
+          name: list directory contents
+          command: ls -lrt
       - store_test_results:
           path: test-results   
 workflows:
