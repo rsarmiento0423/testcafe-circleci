@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "testcafe chrome,firefox ./tests/firstTest.ts"
+    "test:headless": "testcafe chrome:headless,firefox:headless ./tests/firstTest.ts -s takeOnfails=true --reporter html:test-results/report.html"
   },
-  "author": "Ray Sarmiento",
+  "author": "Raymond Sarmiento",
   "license": "ISC",
   "dependencies": {
     "prettier": "^2.5.1",
-    "testcafe": "^1.18.1"
+    "testcafe": "^1.18.1",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }

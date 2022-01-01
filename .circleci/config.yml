@@ -21,7 +21,7 @@ jobs:
           name: execute testcafe using chrome
           command: npm run test:chrome
       - store_test_results:
-          path: /tmp/test-results   
+          path: /test-results   
 workflows:
   e2e-test:
     jobs:
