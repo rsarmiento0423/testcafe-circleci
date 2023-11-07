@@ -1,4 +1,4 @@
-import { Selector } from 'testcafe';
+import { Selector } from 'testcafe'
 
 fixture("First Fixture")
     .page("https://devexpress.github.io/testcafe/example/")

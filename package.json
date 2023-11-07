@@ -4,13 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:headless": "testcafe chrome:headless,firefox:headless ./tests/firstTest.ts -s takeOnFails=true --reporter html:test-results/report.html"
+    "test:chrome": "testcafe chrome:headless ./tests/firstTest.js -s takeOnFails=true --reporter html:test-results/report.html",
+    "test:safari": "testcafe safari:headless ./tests/firstTest.js -s takeOnFails=true --reporter html:test-results/report.html",
+    "test:firefox": "testcafe firefox:headless ./tests/firstTest.js -s takeOnFails=true --reporter html:test-results/report.html",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone XIII ./tests/firstTest.js -s takeOnFails=true --reporter html:test-results/report.html",
+    "test:headless": "testcafe chrome:headless,firefox:headless ./tests/firstTest.js -s takeOnFails=true --reporter html:test-results/report.html"
   },
   "author": "Raymond Sarmiento",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^2.5.1",
-    "testcafe": "^1.18.1",
-    "testcafe-reporter-html": "^1.4.6"
+    "@babel/traverse": "^7.23.2",
+    "decode-uri-component": "^0.4.1",
+    "get-func-name": "^3.0.0",
+    "http-cache-semantics": "^4.1.1",
+    "json5": "^2.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "minimist": "^1.2.8",
+    "moment": "^2.29.4",
+    "nanoid": "^5.0.3",
+    "node-fetch": "^3.3.2",
+    "prettier": "^2.8.8",
+    "semver": "^7.5.4",
+    "testcafe": "^1.20.1",
+    "testcafe-reporter-html": "^1.4.6",
+    "tough-cookie": "^4.1.3"
   }
 }
