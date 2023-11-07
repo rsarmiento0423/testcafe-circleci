@@ -11,6 +11,7 @@ jobs:
       - checkout
       - browser-tools/install-browser-tools
       - node/install
+      - npm install -g npm@latest
       - run: node --version
       - run:
           name: show current directory
