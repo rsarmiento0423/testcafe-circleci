@@ -11,7 +11,7 @@ jobs:
       - checkout
       - browser-tools/install-browser-tools
       - node/install
-      - npm install -g npm@
+      - npm install
       - run: node --version
       - run: npm -v
       - run:
