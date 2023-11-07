@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@4.1.0
+  node: circleci/node:14
   browser-tools: circleci/browser-tools@1.4.6
 jobs:
   test:
@@ -10,7 +10,6 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
-      - node/install
       - npm install
       - run:
           name: show current directory
