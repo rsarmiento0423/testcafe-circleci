@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
-      - node/install-packages
+      - node/install
       - run: node --version
       - run:
           name: show current directory
