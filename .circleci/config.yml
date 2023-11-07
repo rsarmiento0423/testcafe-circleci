@@ -11,8 +11,9 @@ jobs:
       - checkout
       - browser-tools/install-browser-tools
       - node/install
-      - npm install -g npm@latest
+      - npm install -g npm@
       - run: node --version
+      - run: npm -v
       - run:
           name: show current directory
           command: pwd
