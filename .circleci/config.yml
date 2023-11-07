@@ -6,7 +6,7 @@ jobs:
   test:
     working_directory: ~/circleci-testcafe
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:20.4.0-browsers
     steps:
       - checkout
       - browser-tools/install-browser-tools
