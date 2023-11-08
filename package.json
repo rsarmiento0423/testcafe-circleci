@@ -13,7 +13,9 @@
   "author": "Raymond Sarmiento",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^3.3.0",
     "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe": "^3.3.0"
   }
 }
