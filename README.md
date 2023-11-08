@@ -23,5 +23,5 @@ To execute tests to run against headless Firefox browser with HTML test report:<
 To execute tests to run against headless emulated IPhone XIII with HTML test report:<br>
 `test:chrome:mobile`
 
-Developed by: Ray Sarmiento
-Last updated: 11/8/23
+Developed by: Ray Sarmiento<br>
+Last updated: 11/8/23<br>
