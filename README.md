@@ -6,7 +6,7 @@
 against CircleCI.**
 
 
-## Weg Application under Test
+## Web Application under Test
 URL: https://devexpress.github.io/testcafe/example/<br>
 
 
